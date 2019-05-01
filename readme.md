@@ -1,4 +1,4 @@
-# 지뢰 찾기 만들기
+# TDD를 사용한 지뢰 찾기 만들기
 ## 주요용어
 - OOP : [Object-Oriented Programming](https://www.google.co.kr/search?q=Object-Oriented+Programming)
 - TDD : [Test Driven Development](https://www.google.co.kr/search?q=Test+Driven+Development)
