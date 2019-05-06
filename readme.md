@@ -9,7 +9,7 @@
 - Akka.Remote : [Akka.Remote in Akka.net](https://getakka.net/articles/remoting/index.html)
 
 ## 1. TDD+OOP+콘솔
-- [ ] 1.1  지뢰판 그리기
+- [x] 1.1  지뢰판 그리기
 - [ ] 1.2  숫자 채우기
 - [ ] 1.3  폭탄 채우기
 - [ ] 1.4  클릭
