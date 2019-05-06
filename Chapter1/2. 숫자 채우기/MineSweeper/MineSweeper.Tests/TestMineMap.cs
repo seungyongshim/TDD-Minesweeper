@@ -1,5 +1,5 @@
-﻿using Xunit;
-using FluentAssertions;
+﻿using FluentAssertions;
+using Xunit;
 
 namespace MineSweeper.Tests
 {
@@ -12,103 +12,103 @@ namespace MineSweeper.Tests
             var expectedMineItems = new MineItem[9, 9]
             {
                 {
-                    new MineItem{IsBomb =false, NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1}
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1}
                 },
                 {
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 1}
+                    new MineItem{IsBomb = false, NearBombsCount = 1}
                 },
                 {
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 2}
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 2}
                 },
                 {
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 1}
+                    new MineItem{IsBomb = false, NearBombsCount = 1}
                 },
                 {
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 3},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 3},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 3},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 1}
+                    new MineItem{IsBomb = false, NearBombsCount = 3},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1}
                 },
                 {
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 0}
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 0}
                 },
                 {
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 0}
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 0}
                 },
                 {
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
                     new MineItem{IsBomb = true},
-                    new MineItem{IsBomb =false,NearBombsCount = 2},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 0}
+                    new MineItem{IsBomb = false, NearBombsCount = 2},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 0}
                 },
                 {
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 1},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 0},
-                    new MineItem{IsBomb =false,NearBombsCount = 0}
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 1},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 0},
+                    new MineItem{IsBomb = false, NearBombsCount = 0}
                 },
             };
 
