@@ -11,7 +11,14 @@ namespace MineSweeper
         {
             get
             {
-                throw new NotImplementedException { };
+                if (IsBomb)
+                {
+                    return '*';
+                }
+                else
+                {
+                    return Convert.ToChar('0' + NearBombsCount);
+                }
             }
         }
     }

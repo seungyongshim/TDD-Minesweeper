@@ -22,17 +22,14 @@ namespace MineSweeper
             {
                 for (int i = 0; i < Width; i++)
                 {
-                    _mineItems[j,i] = new MineItem { };
+                    _mineItems[j, i] = new MineItem { };
                 }
             }
-
-
-            
         }
 
         public void GenerateAllNearBombsCount()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException { };
         }
     }
 }
